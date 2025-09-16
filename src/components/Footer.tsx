@@ -42,14 +42,14 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3 text-background/80">
                 <Mail className="w-4 h-4 text-primary" />
-                <span>info@ryanholidays.com</span>
+                <span>ryanholidays1@gmail.com</span>
               </div>
             </div>
           </div>
         </div>
         
         <div className="border-t border-background/20 mt-8 pt-8 text-center text-background/60">
-          <p>&copy; 2024 Ryan Holidays. All rights reserved.</p>
+          <p>&copy; 2025 Ryan Holidays. All rights reserved.</p>
         </div>
       </div>
     </footer>
