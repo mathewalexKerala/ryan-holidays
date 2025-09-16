@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 import heroCarImage from "@/assets/tempo-traveller.webp";
+import etios from '@/assets/etios2.jpg'
+import ertiga from '@/assets/Ertiga 400.webp'
 import {handleClick , handleCall} from '@/components/functionality/communication'
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -11,7 +13,18 @@ const Hero = () => {
       image: heroCarImage,
       title: "Explore Our Car Options",
       subtitle: " Choose from our fleet of comfortable and reliable vehicles."
-    }
+    },
+    {
+      image: etios,
+      title: "Explore Our Car Options",
+      subtitle: " Choose from our fleet of comfortable and reliable vehicles."
+    },
+    {
+      image: ertiga,
+      title: "Explore Our Car Options",
+      subtitle: " Choose from our fleet of comfortable and reliable vehicles."
+    },
+
   ];
 
   const nextSlide = () => {
