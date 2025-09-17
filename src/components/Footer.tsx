@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2 mb-4">
               <div style={{backgroundColor:'whitesmoke'}} className="w-8 h-8 rounded-full  flex items-center justify-center">
                 {/* <span className="text-primary-foreground font-bold text-sm">R</span> */}
-                <img src="/ryanHolidayslogo.png" alt="Ryan Holidays Logo" />
+                <img src="/logo.webp" alt="Ryan Holidays Logo" />
               </div>
               <h3 className="text-xl font-bold">Ryan Holidays</h3>
             </div>
