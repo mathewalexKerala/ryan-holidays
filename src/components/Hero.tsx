@@ -1,26 +1,23 @@
-import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
+
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
-import heroCarImage from "@/assets/tempo-traveller.webp";
-import etios from '@/assets/etios2.jpg'
-import ertiga from '@/assets/Ertiga 400.webp'
+import kannur1 from '@/assets/kannur1.jpg'
+import kannur2 from '@/assets/download.jpg'
+import kannur3 from '@/assets/images.jpg'
 import kannurairport from '@/assets/kannur-kerala-india.jpg'
 import kochi from '@/assets/kochi.jpg'
-import {handleClick , handleCall} from '@/components/functionality/communication'
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const slides = [
     {
       image: kannurairport,
-      title: "Explore Your Travelling Destinations",
-      subtitle: "Kannur , Kochi , 682301."
+   
     },
     {
       image: kochi,
-     title: "Explore Your Travelling Destinations",
-      subtitle: "Kannur , Kochi , 682301."
-    },
+  
+    },{image:kannur1},{image:kannur2},{image:kannur3}
    
 
   ];
@@ -40,11 +37,12 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            {slides[currentSlide].title}
+           Explore Your Travelling Destinations
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
-            {slides[currentSlide].subtitle}
-          </p>
+        
+          <h5 className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
+          Kannur , Kochi 
+          </h5>
         </div>
         
         <div className="relative max-w-4xl mx-auto mb-8">

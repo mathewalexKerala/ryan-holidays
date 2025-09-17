@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle ,Instagram ,Youtube } from "lucide-react";
+import { Facebook,Instagram ,Youtube } from "lucide-react";
 import {handleClick , handleCall} from '@/components/functionality/communication'
 const Header = () => {
   // const phoneNumber = '+918296210700'
@@ -11,13 +11,14 @@ const Header = () => {
   // }
     const instagramUrl = 'https://www.instagram.com/ryanholidays1'
     const youtubeUrl='https://www.youtube.com/@ryanholidays'
+    const facebookUrl = 'https://www.facebook.com/ryanholidays1'
   return (
     <header className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <div className="w-16 h-16 rounded-full  flex items-center justify-center">
+          <div className="w-12 h-12 rounded-full  flex items-center justify-center">
             {/* <span className="text-primary-foreground font-bold text-sm">R</span> */}
-            <img src="/logo.webp" alt="logo of Ryan Holidays" />
+            <img src="/ryanHolidayslogo.png" alt="logo of Ryan Holidays" />
           </div>
           <h1 className="text-xl font-bold text-foreground">Ryan Holidays</h1>
         </div>
@@ -76,6 +77,30 @@ const Header = () => {
       onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1.0)')}
     >
       <Youtube size={24} />
+    </a>
+
+
+     <a
+      href={facebookUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        display: 'inline-flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '40px',
+        height: '40px',
+        borderRadius: '50%',
+        background: '#1877F2',  // Facebook brand blue
+        color: '#fff',
+        textDecoration: 'none',
+        boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+        transition: 'transform 0.2s',
+      }}
+      onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.1)')}
+      onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1.0)')}
+    >
+      <Facebook size={24} />
     </a>
         </div>
       </div>
