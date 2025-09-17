@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone, MessageCircle ,Instagram ,Youtube } from "lucide-react";
 import {handleClick , handleCall} from '@/components/functionality/communication'
 const Header = () => {
   // const phoneNumber = '+918296210700'
@@ -9,6 +9,8 @@ const Header = () => {
   // const handleCall = () => {
   //   window.location.href = `tel:${phoneNumber}`
   // }
+    const instagramUrl = 'https://www.instagram.com/ryanholidays1'
+    const youtubeUrl='https://www.youtube.com/@ryanholidays'
   return (
     <header className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -27,14 +29,54 @@ const Header = () => {
         </nav>
         
         <div className="flex items-center space-x-3">
-          <Button variant="outline" size="sm" className="hidden sm:flex items-center space-x-2" onClick={handleCall}>
-            <Phone className="w-4 h-4" />
-            <span>Call Now</span>
-          </Button>
-          <Button size="sm" className="btn-whatsapp" onClick={handleClick}>
-            <MessageCircle className="w-4 h-4 mr-2" />
-            WhatsApp
-          </Button>
+          {/* <Button variant="outline" size="sm" className="hidden rounded-full sm:flex items-center space-x-2" onClick={handleCall}>
+            <Instagram className="w-4 h-4" />
+            
+          </Button> */}
+       <a
+      href={instagramUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        display: 'inline-flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '40px',
+        height: '40px',
+        borderRadius: '50%',
+        background: 'linear-gradient(45deg, #833AB4, #FD1D1D, #F56040, #FFC107)',
+        color: '#fff',
+        textDecoration: 'none',
+        boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+        transition: 'transform 0.2s',
+      }}
+      onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.1)')}
+      onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1.0)')}
+    >
+      <Instagram size={24} />
+    </a>
+         <a
+      href={youtubeUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        display: 'inline-flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '40px',
+        height: '40px',
+        borderRadius: '50%',
+        background: '#FF0000',  // YouTube brand red color
+        color: '#fff',
+        textDecoration: 'none',
+        boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+        transition: 'transform 0.2s',
+      }}
+      onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.1)')}
+      onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1.0)')}
+    >
+      <Youtube size={24} />
+    </a>
         </div>
       </div>
     </header>

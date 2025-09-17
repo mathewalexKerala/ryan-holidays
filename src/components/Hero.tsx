@@ -91,7 +91,7 @@ const Hero = () => {
           </div>
         </div>
         
-        <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+        {/* <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
           <Button size="lg" className="btn-whatsapp text-lg px-8 py-6" onClick={handleClick}>
             <MessageCircle className="w-5 h-5 mr-3" />
             WhatsApp Us
@@ -100,7 +100,7 @@ const Hero = () => {
             <Phone className="w-5 h-5 mr-3" />
             Call Now
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
