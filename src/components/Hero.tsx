@@ -4,26 +4,24 @@ import { useState } from "react";
 import heroCarImage from "@/assets/tempo-traveller.webp";
 import etios from '@/assets/etios2.jpg'
 import ertiga from '@/assets/Ertiga 400.webp'
+import kannurairport from '@/assets/kannur-kerala-india.jpg'
+import kochi from '@/assets/kochi.jpg'
 import {handleClick , handleCall} from '@/components/functionality/communication'
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const slides = [
     {
-      image: heroCarImage,
-      title: "Explore Our Car Options",
-      subtitle: " Choose from our fleet of comfortable and reliable vehicles."
+      image: kannurairport,
+      title: "Explore Your Travelling Destinations",
+      subtitle: "Kannur , Kochi , 682301."
     },
     {
-      image: etios,
-      title: "Explore Our Car Options",
-      subtitle: " Choose from our fleet of comfortable and reliable vehicles."
+      image: kochi,
+     title: "Explore Your Travelling Destinations",
+      subtitle: "Kannur , Kochi , 682301."
     },
-    {
-      image: ertiga,
-      title: "Explore Our Car Options",
-      subtitle: " Choose from our fleet of comfortable and reliable vehicles."
-    },
+   
 
   ];
 
