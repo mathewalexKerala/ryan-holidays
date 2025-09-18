@@ -45,7 +45,7 @@ const Header = () => {
         width: '40px',
         height: '40px',
         borderRadius: '50%',
-        background: 'var(--gradient-ocean)',
+        background: 'hsl(var(--primary)',
         color: '#fff',
         textDecoration: 'none',
         boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
@@ -67,7 +67,7 @@ const Header = () => {
         width: '40px',
         height: '40px',
         borderRadius: '50%',
-        background: 'var(--gradient-ocean)',  // YouTube brand red color
+        background: 'hsl(var(--primary)',  // YouTube brand red color
         color: '#fff',
         textDecoration: 'none',
         boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
@@ -91,7 +91,7 @@ const Header = () => {
         width: '40px',
         height: '40px',
         borderRadius: '50%',
-        background: 'var(--gradient-ocean)',  // Facebook brand blue
+        background: 'hsl(var(--primary)',  // Facebook brand blue
         color: '#fff',
         textDecoration: 'none',
         boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
