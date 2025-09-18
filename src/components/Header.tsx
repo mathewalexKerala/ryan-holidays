@@ -45,7 +45,7 @@ const Header = () => {
         width: '40px',
         height: '40px',
         borderRadius: '50%',
-        background: 'linear-gradient(45deg, #833AB4, #FD1D1D, #F56040, #FFC107)',
+        background: 'var(--gradient-ocean)',
         color: '#fff',
         textDecoration: 'none',
         boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
@@ -67,7 +67,7 @@ const Header = () => {
         width: '40px',
         height: '40px',
         borderRadius: '50%',
-        background: '#FF0000',  // YouTube brand red color
+        background: 'var(--gradient-ocean)',  // YouTube brand red color
         color: '#fff',
         textDecoration: 'none',
         boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
@@ -91,7 +91,7 @@ const Header = () => {
         width: '40px',
         height: '40px',
         borderRadius: '50%',
-        background: '#1877F2',  // Facebook brand blue
+        background: 'var(--gradient-ocean)',  // Facebook brand blue
         color: '#fff',
         textDecoration: 'none',
         boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
